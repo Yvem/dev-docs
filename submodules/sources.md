@@ -27,26 +27,28 @@ git submodule add \
 ## https://github.com/Synthetixio/SIPs
 git submodule add \
        https://github.com/Synthetixio/SIPs.git \
-  ./submodules/github.com/
+  ./submodules/github.com/Synthetixio/SIPs
 
 ## https://github.com/infinex-xyz/proposals
 git submodule add \
        https://github.com/infinex-xyz/proposals.git \
-  ./submodules/github.com/
+  ./submodules/github.com/infinex-xyz/proposals
 
 ## https://github.com/solana-foundation/solana-improvement-documents
 git submodule add \
        https://github.com/solana-foundation/solana-improvement-documents.git \
-  ./submodules/github.com/
+  ./submodules/github.com/solana-foundation/solana-improvement-documents
 
 ## https://github.com/ChainAgnostic/CAIPs
 ## https://standards.chainagnostic.org/
-git submodule add https://github.com/ChainAgnostic/CAIPs.git \
-  ./submodules/github.com/
-  
-  
+git submodule add \
+       https://github.com/ChainAgnostic/CAIPs.git \
+  ./submodules/github.com/ChainAgnostic/CAIPs
 
-https://hyperliquid.gitbook.io/hyperliquid-docs/hyperliquid-improvement-proposals-hips
+## https://docs.ens.domains/ensip/
+git submodule add \
+       https://github.com/ensdomains/ensips.git \
+  ./submodules/github.com/ensdomains/ensips
 
 
 ```
