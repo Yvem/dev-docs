@@ -1,3 +1,21 @@
 [submodule "submodules/github.com/bitcoin/bips"]
 	path = submodules/github.com/bitcoin/bips
 	url = https://github.com/bitcoin/bips.git
+[submodule "submodules/github.com/ethereum/EIPs"]
+	path = submodules/github.com/ethereum/EIPs
+	url = https://github.com/ethereum/EIPs.git
+[submodule "submodules/github.com/satoshilabs/slips"]
+	path = submodules/github.com/satoshilabs/slips
+	url = https://github.com/satoshilabs/slips.git
+[submodule "submodules/github.com/Synthetixio/SIPs"]
+	path = submodules/github.com/Synthetixio/SIPs
+	url = https://github.com/Synthetixio/SIPs.git
+[submodule "submodules/github.com/infinex-xyz/proposals"]
+	path = submodules/github.com/infinex-xyz/proposals
+	url = https://github.com/infinex-xyz/proposals.git
+[submodule "submodules/github.com/solana-foundation/solana-improvement-documents"]
+	path = submodules/github.com/solana-foundation/solana-improvement-documents
+	url = https://github.com/solana-foundation/solana-improvement-documents.git
+[submodule "submodules/github.com/ChainAgnostic/CAIPs"]
+	path = submodules/github.com/ChainAgnostic/CAIPs
+	url = https://github.com/ChainAgnostic/CAIPs.git
