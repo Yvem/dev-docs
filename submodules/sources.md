@@ -5,6 +5,9 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 
 ```
+## From the repo ROOT
+
+
 ## https://bips.dev/status/
 ## https://github.com/bitcoin/bips
 git submodule add \
