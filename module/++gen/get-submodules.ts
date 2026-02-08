@@ -74,5 +74,5 @@ export function getꓽsubmodules(): Array<SubmoduleInfo> {
 	}
 
 	flush()
-	return result
+	return result.sort((a, b) => a.name.localeCompare(b.name))
 }
