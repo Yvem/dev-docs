@@ -11,14 +11,8 @@ import { readFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
-import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit } from "../types.ts"
+import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, SubmoduleInfo } from "./types.ts"
 
-export type SubmoduleInfo = {
-	name: string
-	path‿rel: PathⳇRelative
-	path‿abs: PathⳇAbsolute
-	url: UrlⳇGit
-}
 
 const GITMODULES_PATH = resolve(
 	dirname(fileURLToPath(import.meta.url)),
