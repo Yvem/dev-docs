@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    background: #f7f7fa;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #1e2122;
+}
+
+article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    @apply px-4;
+}
+
+nav {
+    display: flex;
+    gap: 4px;
+    padding: 4px 0;
+    align-items: center;
+}
+
+nav ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px 0;
+}
+
+.front {
+    border: 1px solid black;
+    padding: 16px;
+}
+
+.ensip-list {
+    @apply space-y-4 pt-4;
+
+    li[data-x='true'] {
+        a {
+            color: #de5999;
+        }
+    }
+}
+
+.link {
+    color: #3889ff;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #056aff;
+}
+
+pre,
+:not(pre) > code {
+    @apply bg-ens-grey1 border rounded-md border-ens-grey2 max-w-full overflow-x-auto text-ens-grey3 text-sm;
+}
+
+pre {
+    @apply px-4 py-2 mb-2;
+}
+
+:not(pre) > code {
+    @apply leading-none p-1 inline-flex;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #a0aec0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e1e4e8;
+    border-radius: 4px;
+}
+
+h1 {
+    @apply text-4xl pt-6;
+}
+
+.content {
+    overflow-x: hidden;
+    @apply text-wrap;
+
+    h2 {
+        @apply text-2xl font-bold pt-4 pb-2;
+    }
+    h3 {
+        @apply text-xl font-bold pt-4 pb-2;
+    }
+    h4 {
+        @apply text-lg font-bold pt-4 pb-2;
+    }
+    p {
+        @apply py-2;
+    }
+    a {
+        @apply link;
+    }
+    ul,
+    ol {
+        @apply pl-6;
+
+        p {
+            @apply py-0;
+        }
+        li {
+            @apply pb-2;
+        }
+    }
+    ul {
+        @apply list-disc;
+    }
+    ol {
+        @apply list-decimal;
+    }
+    blockquote {
+        @apply border-l-2 border-ens-grey2 pl-4 py-1 my-1;
+    }
+    table {
+        @apply w-full table-auto border border-ens-grey2;
+
+        th,
+        td {
+            @apply p-2 border-b border-ens-grey2;
+
+            &:not(:last-child) {
+                @apply border-r border-ens-grey2;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+name: Check & Build
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Tools & Dependencies
+        uses: ./.github/actions/install
+
+      - name: Build web preview
+        run: pnpm build
+        working-directory: ./app
