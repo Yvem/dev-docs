@@ -1,0 +1,24 @@
+[submodule "data-sources/submodules/github.com/bitcoin/bips"]
+	path = data-sources/submodules/github.com/bitcoin/bips
+	url = https://github.com/bitcoin/bips.git
+[submodule "data-sources/submodules/github.com/ethereum/EIPs"]
+	path = data-sources/submodules/github.com/ethereum/EIPs
+	url = https://github.com/ethereum/EIPs.git
+[submodule "data-sources/submodules/github.com/satoshilabs/slips"]
+	path = data-sources/submodules/github.com/satoshilabs/slips
+	url = https://github.com/satoshilabs/slips.git
+[submodule "data-sources/submodules/github.com/Synthetixio/SIPs"]
+	path = data-sources/submodules/github.com/Synthetixio/SIPs
+	url = https://github.com/Synthetixio/SIPs.git
+[submodule "data-sources/submodules/github.com/infinex-xyz/proposals"]
+	path = data-sources/submodules/github.com/infinex-xyz/proposals
+	url = https://github.com/infinex-xyz/proposals.git
+[submodule "data-sources/submodules/github.com/solana-foundation/solana-improvement-documents"]
+	path = data-sources/submodules/github.com/solana-foundation/solana-improvement-documents
+	url = https://github.com/solana-foundation/solana-improvement-documents.git
+[submodule "data-sources/submodules/github.com/ChainAgnostic/CAIPs"]
+	path = data-sources/submodules/github.com/ChainAgnostic/CAIPs
+	url = https://github.com/ChainAgnostic/CAIPs.git
+[submodule "data-sources/submodules/github.com/ensdomains/ensips"]
+	path = data-sources/submodules/github.com/ensdomains/ensips
+	url = https://github.com/ensdomains/ensips.git
