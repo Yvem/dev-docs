@@ -7,7 +7,7 @@ SPEC
 - SubmoduleInfo includes name, relative path, absolute path, and URL.
 */
 
-import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, SubmoduleInfo } from "./types.ts"
+import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, DocSourceInfo } from "./types.ts"
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -16,9 +16,9 @@ const ROOT_PATH = resolve(
 	"../..",
 )
 
-export function getꓽmanual(): Array<SubmoduleInfo> {
+export function getꓽmanual(): Array<DocSourceInfo> {
 	return [
-		((): SubmoduleInfo => {
+		((): DocSourceInfo => {
 			const path‿rel: PathⳇRelative = 'data-sources/manual/bitcoin.org'
 			return {
 				name: path‿rel,
@@ -27,7 +27,7 @@ export function getꓽmanual(): Array<SubmoduleInfo> {
 				url: 'https://bitcoin.org/'
 			}
 		})(),
-		((): SubmoduleInfo => {
+		((): DocSourceInfo => {
 			const path‿rel: PathⳇRelative = 'data-sources/manual/hyperliquid.gitbook.io'
 			return {
 				name: path‿rel,

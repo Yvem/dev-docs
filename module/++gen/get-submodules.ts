@@ -11,7 +11,7 @@ import { readFileSync } from "node:fs"
 import { dirname, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 
-import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, SubmoduleInfo } from "./types.ts"
+import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, DocSourceInfo } from "./types.ts"
 
 
 const GITMODULES_PATH = resolve(
@@ -19,11 +19,11 @@ const GITMODULES_PATH = resolve(
 	"../../.gitmodules",
 )
 
-export function getꓽsubmodules(): Array<SubmoduleInfo> {
+export function getꓽsubmodules(): Array<DocSourceInfo> {
 	const raw = readFileSync(GITMODULES_PATH, "utf8")
 	const lines = raw.split(/\r?\n/)
-	const result: Array<SubmoduleInfo> = []
-	let current: Partial<SubmoduleInfo> & { name?: string } = {}
+	const result: Array<DocSourceInfo> = []
+	let current: Partial<DocSourceInfo> & { name?: string } = {}
 
 	const flush = () => {
 		if (!current.name && !current.path‿rel && !current.url) return
