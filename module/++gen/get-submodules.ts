@@ -8,7 +8,7 @@ SPEC
 */
 
 import { readFileSync } from "node:fs"
-import { dirname, resolve } from "node:path"
+import { dirname, resolve, relative } from "node:path"
 import { fileURLToPath } from "node:url"
 
 import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, DocSourceInfo } from "./types.ts"
@@ -17,6 +17,11 @@ import type { PathⳇAbsolute, PathⳇRelative, UrlⳇGit, DocSourceInfo } from 
 const GITMODULES_PATH = resolve(
 	dirname(fileURLToPath(import.meta.url)),
 	"../../.gitmodules",
+)
+
+const DATA_SOURCES_PATH = resolve(
+	dirname(fileURLToPath(import.meta.url)),
+	"../../data-sources",
 )
 
 export function getꓽsubmodules(): Array<DocSourceInfo> {
@@ -32,10 +37,13 @@ export function getꓽsubmodules(): Array<DocSourceInfo> {
 				`Incomplete submodule entry in ${GITMODULES_PATH}: ${JSON.stringify(current)}`,
 			)
 		}
+		const path‿abs: PathⳇAbsolute = resolve(dirname(GITMODULES_PATH), current.path‿rel)
+
 		result.push({
 			name: current.name,
-			path‿rel: current.path‿rel,
-			path‿abs: resolve(dirname(GITMODULES_PATH), current.path‿rel) as PathⳇAbsolute,
+			path‿rel: current.path‿rel + '/',
+			//path‿rel: relative(DATA_SOURCES_PATH, path‿abs), //current.path‿rel,
+			//path‿abs: resolve(dirname(GITMODULES_PATH), current.path‿rel) as PathⳇAbsolute,
 			url: current.url,
 		})
 		current = {}

@@ -6,7 +6,7 @@ export type UrlⳇGit = string
 
 export type DocSourceInfo = {
 	name: string
-	path‿rel: PathⳇRelative
-	path‿abs: PathⳇAbsolute
+	path‿rel: PathⳇRelative // relative to the root of the repo
+	//path‿abs: PathⳇAbsolute unneeded since the caller needs the path to this repo + non-deterministic
 	url: UrlⳇGit
 }
