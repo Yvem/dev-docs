@@ -19,7 +19,7 @@ const ROOT_PATH = resolve(
 export function getꓽmanual(): Array<DocSourceInfo> {
 	return [
 		((): DocSourceInfo => {
-			const path‿rel: PathⳇRelative = 'manual/bitcoin.org'
+			const path‿rel: PathⳇRelative = 'data-sources/manual/bitcoin.org'
 			return {
 				name: path‿rel,
 				path‿rel,
@@ -28,7 +28,7 @@ export function getꓽmanual(): Array<DocSourceInfo> {
 			}
 		})(),
 		((): DocSourceInfo => {
-			const path‿rel: PathⳇRelative = 'manual/hyperliquid.gitbook.io'
+			const path‿rel: PathⳇRelative = 'data-sources/manual/hyperliquid.gitbook.io'
 			return {
 				name: path‿rel,
 				path‿rel,
